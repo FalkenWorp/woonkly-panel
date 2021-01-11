@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.339" height="32.739" viewBox="0 0 59.339 32.739">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_163" data-name="Trazado 163" d="M348.567-1023.2a17.712,17.712,0,0,1-9.874-3.513s4.855-6.769,11.109-7.456c5.432-.6,8.476,1.8,8.725,3.771.165,1.97-1.976,6.855-9.956,7.2m-24.11,5.142c-7.982,2.656-11.355-1.285-11.932-3.171s.577-4.884,6.583-6.6c5.921-1.713,13.088,3,13.088,3a17.121,17.121,0,0,1-7.734,6.769M349.8-1043c-13.088.172-15.882,13.284-15.882,13.284-4.609-4.628-9.133-7.029-15.716-6.341s-11.841,6.94-12.178,11.825c-.411,4.8,4.115,13.967,14.565,13.967s14.811-11.4,14.811-11.4a17.8,17.8,0,0,0,14.154,6.513c11.766-.256,15.14-8.4,15.716-12.426.576-4.8-2.387-15.682-15.47-15.424" transform="translate(-306 1043)" fill="#00bdec"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Trazado_162" data-name="Trazado 162" d="M0,1129.851H3928.624V-1080H0Z" transform="translate(0 1080)" fill="#00bdec"/>
+    </clipPath>
+  </defs>
+  <g id="woops" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <g id="Grupo_202" data-name="Grupo 202" transform="translate(-626.124 -75.707)" clip-path="url(#clip-path-2)">
+      <g id="Grupo_200" data-name="Grupo 200" opacity="0">
+        <g id="Grupo_199" data-name="Grupo 199">
+          <path id="Trazado_160" data-name="Trazado 160" d="M-306-37H3622.624V2172.851H-306Z" transform="translate(306 37)" fill="#00bdec"/>
+        </g>
+      </g>
+      <g id="Grupo_201" data-name="Grupo 201">
+        <path id="Trazado_161" data-name="Trazado 161" d="M-306-37H3622.624V2172.851H-306Z" transform="translate(306 37)" fill="#00bdec"/>
+      </g>
+    </g>
+  </g>
+</svg>

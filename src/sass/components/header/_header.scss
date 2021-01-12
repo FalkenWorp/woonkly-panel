@@ -1,0 +1,119 @@
+/*
+ * @version 1.1.0
+ * @description Estilos del componente Header
+*/
+
+header {
+
+    padding: $paddingNormal 0;
+    background-color: var(--white);
+    border-bottom: 1px solid #e9e9e9;
+
+    .left {
+
+
+        .__logo {
+            img {
+                max-height: 44px;
+            }
+        }
+
+        .__section-title {
+            margin-left: $marginLarge;
+        }
+
+    }
+
+    .right {
+
+        justify-content: flex-end;
+
+        .__nav-item {
+
+            margin: 0 $marginMedium;
+
+            .__icon {
+                img {
+                    height: 18px;
+                }
+            }
+
+            .--sun {
+                height: 28px;
+            } 
+
+            .--moon {
+                height: 25px;
+            }
+
+            .__score {
+                margin-left: $marginNormal;
+            }
+
+            .__divider {
+                margin: 0 $marginNormal;
+            }
+
+            &.--badge-primary {
+                border-radius: 0.25rem;
+                padding: $paddingNormal;
+                background-color: var(--primary);
+            }
+
+            &.--badge-mini {
+                border-radius: 1rem;
+                padding: 0.25rem 0.75rem;
+                background-color: #eaeaea;
+            }
+
+        }
+
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        .left {
+
+            .__logo {
+                img {
+                    max-height: 32px;
+                }
+            }
+
+            .__section-title {
+                display: none;
+            }
+
+        }
+
+        .right {
+
+            .__nav-item {
+
+                flex-direction: column;
+                margin: 0 $marginNormal;
+
+                &.--badge-primary {
+                    p { font-size: 0.7rem !important; }
+                    padding: 0.5rem;
+                }
+
+                &.--badge-mini {
+                    p { font-size: 0.7rem !important; }
+                    padding: 0.25rem 0.5rem;
+                    background-color: #eaeaea;
+                }
+
+            }
+
+            .--theme {
+                display: none;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,112 @@
+/*
+ * @version 2.0.0
+ * @author Trejocode - Sergio
+ * @description Base de colores compatible con WCAG AA
+*/
+
+:root {
+
+    --primary:       #01bdeb;
+    --primary-alt:   #288091;
+    --secondary:     #263d54;
+    --secondary-alt: #516376;
+    --success:       #00c671;
+    --warning:       #f39c12;
+    --danger:        #c0392b;
+    --info:          #258395;
+
+    --black:     #292a46;
+    --white:     #FFFFFF;
+    --gray:      #6c6c6c;  
+    --darkgray:  #4b4b4b;
+    --lightgray:  #b1b1b1;
+
+    --darkBlue:  #263d54;
+    --darkAqua:  #258395;
+    --aqua:      #33c8a3;
+    --lightBg:   #ebf3f5;
+
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.color-primary-alt {
+    color: var(--primary-alt);
+}
+
+.color-secondary {
+    color: var(--secondary);
+}
+
+.color-secondary-alt {
+    color: var(--secondary-alt);
+}
+
+.color-success {
+    color: var(--success);
+}
+
+.color-warning {
+    color: var(--warning);
+}
+
+.color-danger {
+    color: var(--danger);
+}
+
+.color-info {
+    color: var(--info);
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.color-darkgray {
+    color: var(--darkgray);
+}
+
+.color-lightgray {
+    color: var(--lightgray);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+html[data-theme='dark'] {
+ 
+    --primary:       #3E816D;
+    --primary-alt:   #FFFFFF;
+    --secondary:     #FFFFFF;
+    --secondary-alt: #FFFFFF;
+    --success:       #27ae60;
+    --warning:       #f39c12;
+    --danger:        #c0392b;
+    --info:          #258395;
+
+    --black:     #ebebeb;
+    --white:     #0a0a0a;
+    --gray:      #c2c2c2;  
+    --darkgray:  #a0a0a0;
+
+    body {
+        background-color: #2c2c2c;
+    }
+
+    .color-white {
+        color: var(--black);
+    }
+
+    .color-black {
+        color: #000000;
+    }
+    
+
+}

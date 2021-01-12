@@ -1,0 +1,37 @@
+/*
+ * @version 1.1.0
+ * @description Estilos del componente PopOver
+*/
+
+.popover {
+
+    padding: 10px 0;
+    background-color: var(--primary);
+
+    a { 
+        font-size: 0.93rem; 
+        color: var(--white);
+        font-weight: $weightSemi;
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        a { font-size: 0.9rem; }
+    
+    }
+
+}
+
+html[data-theme='dark'] {
+
+    .popover {
+
+        background-color: var(--white);
+    
+        a {
+            color: var(--black);
+        }
+    
+    }
+
+}

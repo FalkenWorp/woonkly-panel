@@ -84,6 +84,7 @@
     @media screen and (max-width: 1366px) {
 
         .main {
+
             .cards-container {
 
                 .__card {
@@ -93,6 +94,7 @@
                 }
     
             }
+
         }
         
     }
@@ -104,6 +106,7 @@
             .cards-container {
 
                 .__card {
+
                     width: calc(20% - 1rem);
                     margin: $marginNormal;
                     padding: $paddingSemi 1rem;
@@ -147,6 +150,7 @@
             .cards-container {
 
                 .__card {
+
                     width: calc(45% - 1rem);
                     margin: $marginNormal;
                     padding: $paddingSemi 1rem;
@@ -201,14 +205,17 @@
         .main {
 
             .__card {
+
                 width: 100%;
                 margin: $marginNormal;
                 padding: $paddingSemi 1rem;
+
             }
 
             .cards-container {
 
                 .__card {
+
                     width: 100%;
                     margin: $marginNormal;
                     padding: $paddingSemi 1rem;

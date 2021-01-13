@@ -1,3 +1,9 @@
+/**
+ * @version 1.0.0
+ * @author Trejocode - Sergio
+ * @description Page /
+*/
+
 import Head from 'next/head';
 import Header from 'components/Header';
 import Footer from 'components/Footer';

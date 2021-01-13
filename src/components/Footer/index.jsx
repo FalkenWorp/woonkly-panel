@@ -1,3 +1,9 @@
+/**
+ * @version 1.0.0
+ * @author Trejocode - Sergio
+ * @description <Footer /> Component 
+*/
+
 import React from 'react';
 
 const Footer = _ => {

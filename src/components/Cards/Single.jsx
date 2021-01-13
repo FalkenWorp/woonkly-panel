@@ -1,3 +1,13 @@
+/**
+ * @version 1.0.0
+ * @author Trejocode - Sergio
+ * @description <CardSingle /> Component 
+ * @param { String } icon: Image URL
+ * @param { String } iconName: Image title and alt
+ * @param { String } value: Title
+ * @param { String } description: Description of the currency
+*/
+
 import React from 'react';
 
 const CardSingle = ({ icon, iconName, value, description }) => {

@@ -1,3 +1,15 @@
+/**
+ * @version 1.0.0
+ * @author Trejocode - Sergio
+ * @description <CardShare /> Component 
+ * @param { String } icon: Image URL
+ * @param { String } iconName: Image title and alt
+ * @param { String } value: Title
+ * @param { String } description: Description of the currency
+ * @param { String } badgeValue: Badge content
+ * @param { Boolean } isCompounded: Allow the compound button
+*/
+
 import React from 'react';
 
 const CardShared = ({ icon, iconName, value, description, badgeValue, isCompounded = false }) => {

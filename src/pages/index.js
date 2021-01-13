@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
+import CardSingle from 'components/Cards/Single';
+import CardShared from 'components/Cards/Shared';
 
 const PageHome = _ => {
 
@@ -22,131 +24,14 @@ const PageHome = _ => {
 						</div>
 						<div className="white-space-32"></div>
 						<div className="justify-center">
-							<div className="__card column --single">
-								<div className="__icon justify-center">
-									<img src="/images/woop.svg" alt="Woop Logo"/>
-								</div>
-								<div className="white-space-32"></div>
-								<h3 className="text-center font-triple">
-									7.004
-								</h3>
-								<div className="white-space-24"></div>
-								<h4 className="text-center font-regular weight-semi">
-									Woop Bep 20 Staked
-								</h4>
-								<div className="white-space-24"></div>
-								<div className="btn-container justify-center">
-									<button className="__btn --btn-primary --mr-8 color-white weight-semi">
-										Unstake
-									</button>
-									<button className="__btn --btn-primary --ml-8 color-white weight-semi">
-										+
-									</button>
-								</div>
-							</div>
+							<CardSingle icon = "/images/woop.svg" iconName = "Woop" value = "7.004" description = "Woop Bep 20 Staked" />
 						</div>
 						<div className="white-space-16"></div>
 						<div className="cards-container wrap">
-							<div className="__card column --badge">
-								<div className="__icon justify-center">
-									<img src="/images/woop.svg" alt="Woop Logo"/>
-								</div>
-								<div className="white-space-32"></div>
-								<h3 className="text-center font-double">
-									7.004
-								</h3>
-								<div className="white-space-16"></div>
-								<h4 className="text-center font-tiny weight-semi">
-									Woop Bep 20 Staked
-								</h4>
-								<div className="white-space-24"></div>
-								<div className="btn-container justify-center">
-									<button className="__btn --btn-primary --mr-8 color-white weight-semi">
-										Collect
-									</button>
-									<button className="__btn --btn-ghost --ml-8 weight-semi color-primary">
-										Compound
-									</button>
-								</div>
-								<div className="--badge-mini row">
-									<p className="color-black font-mini weight-bold">
-										BEP20
-									</p>
-								</div>
-							</div>
-							
-							<div className="__card column --badge">
-								<div className="__icon justify-center">
-									<img src="/images/bnb.svg" alt="Woop Logo"/>
-								</div>
-								<div className="white-space-32"></div>
-								<h3 className="text-center font-double">
-									7.004
-								</h3>
-								<div className="white-space-16"></div>
-								<h4 className="text-center font-tiny weight-semi">
-									BNB Earned
-								</h4>
-								<div className="white-space-24"></div>
-								<div className="btn-container justify-center">
-									<button className="__btn --btn-primary --mr-8 color-white weight-semi">
-										Collect
-									</button>
-								</div>
-								<div className="--badge-mini row">
-									<p className="color-black font-mini weight-bold">
-										BEP20
-									</p>
-								</div>
-							</div>
-							<div className="__card column --badge">
-								<div className="__icon justify-center">
-									<img src="/images/ethereum.svg" alt="Woop Logo"/>
-								</div>
-								<div className="white-space-32"></div>
-								<h3 className="text-center font-double">
-									7.004
-								</h3>
-								<div className="white-space-16"></div>
-								<h4 className="text-center font-tiny weight-semi">
-									ETH Earned
-								</h4>
-								<div className="white-space-24"></div>
-								<div className="btn-container justify-center">
-									<button className="__btn --btn-primary --mr-8 color-white weight-semi">
-										Collect
-									</button>
-								</div>
-								<div className="--badge-mini row">
-									<p className="color-black font-mini weight-bold">
-										BEP20
-									</p>
-								</div>
-							</div>
-							<div className="__card column --badge">
-								<div className="__icon justify-center">
-									<img src="/images/cake.svg" alt="Woop Logo"/>
-								</div>
-								<div className="white-space-32"></div>
-								<h3 className="text-center font-double">
-									7.004
-								</h3>
-								<div className="white-space-16"></div>
-								<h4 className="text-center font-tiny weight-semi">
-									Woop Bep 20 Staked
-								</h4>
-								<div className="white-space-24"></div>
-								<div className="btn-container justify-center">
-									<button className="__btn --btn-primary --mr-8 color-white weight-semi">
-										Collect
-									</button>
-								</div>
-								<div className="--badge-mini row">
-									<p className="color-black font-mini weight-bold">
-										BEP20
-									</p>
-								</div>
-							</div>
+							<CardShared icon = "/images/woop.svg" iconName = "Woop" value = "7.004" description = "Woop Bep 20 Staked" badgeValue = "BEP20" isCompounded = { true } />
+							<CardShared icon = "/images/bnb.svg" iconName = "Bnb" value = "7.004" description = "BNB Earned" badgeValue = "BEP20" />
+							<CardShared icon = "/images/ethereum.svg" iconName = "ETH" value = "7.004" description = "ETH Earned" badgeValue = "BEP20" />
+							<CardShared icon = "/images/cake.svg" iconName = "Cake" value = "7.004" description = "Woop Bep 20 Staked" badgeValue = "BEP20" />
 						</div>
 					</div>
 				</div>

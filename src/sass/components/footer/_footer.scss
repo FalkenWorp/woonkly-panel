@@ -14,6 +14,7 @@ footer {
 
         a {
 
+            color: #9a9a9a;
             padding: 0 $paddingSemi;
     
         }
@@ -22,7 +23,7 @@ footer {
 
     .right {
 
-
+        p { color: #9a9a9a; }
 
     }
 
@@ -57,12 +58,20 @@ footer {
         }
 
         .right {
+
             width: 100%;
+
             p {
                 text-align: center;
+                padding: 0 $paddingLarge;
             }
         }
 
+    }
+
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #1b1d31;
     }
 
 

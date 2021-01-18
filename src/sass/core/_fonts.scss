@@ -5,7 +5,7 @@
 
 /*    FONT FAMILIES    */
 
-$IBM: 'IBM Plex Sans', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
 
 
 /*    FONT SIZES    */
@@ -63,7 +63,7 @@ $fontTriple:    2.5rem;
 
 /*    FONT WEIGHTS 
 
-    - Based on 'IBM Plex Sans'
+    - Based on 'OpenSans'
 
 */
 
@@ -75,7 +75,7 @@ $weightBold: 	700;
 h1, h2, h3, h4, h5, h6, p, a, b, span, th, td, li, caption,
 label, strong, legend, em, button, select, option, input, button {
     color: var(--black);
-    font-family: $IBM;
+    font-family: $OpenSans;
 }
 
 h1 {
@@ -85,7 +85,7 @@ h1 {
 
 h2 {
 	font-size: $fontSemi;
-	font-weight: $weightSemi;
+	font-weight: $weightBold;
 }
 
 h3 {
@@ -95,12 +95,12 @@ h3 {
 
 h4 {
 	font-size: $fontRegular;
-	font-weight: $weightMedium;
+	font-weight: $weightSemi;
 }
 
 h5 {
 	font-size: $fontSmall;
-	font-weight: $weightMedium;
+	font-weight: $weightRegular;
 }
 
 h6 {

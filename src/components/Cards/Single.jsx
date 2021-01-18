@@ -17,20 +17,20 @@ const CardSingle = ({ icon, iconName, value, description }) => {
             <div className="__icon justify-center">
                 <img src = { icon } alt = { iconName } />
             </div>
-            <div className="white-space-32"></div>
-            <h3 className="text-center font-triple">
+            <div className="white-space-16"></div>
+            <h3 className="text-center weight-bold font-semi">
                 { value }
             </h3>
-            <div className="white-space-24"></div>
-            <h4 className="text-center font-regular weight-semi">
+            <div className="white-space-16"></div>
+            <h4 className="text-center font-text weight-semi">
                 { description }
             </h4>
-            <div className="white-space-24"></div>
+            <div className="white-space-32"></div>
             <div className="btn-container justify-center">
-                <button className="__btn --btn-primary --mr-8 color-white weight-semi">
+                <button className="btn --btn-primary --margin-right-8 font-tiny color-white weight-semi">
                     Unstake
                 </button>
-                <button className="__btn --btn-primary --ml-8 color-white weight-semi">
+                <button className="btn --btn-primary --square --margin-left-8 font-tiny color-white weight-bold">
                     +
                 </button>
             </div>

@@ -7,19 +7,30 @@ header {
 
     padding: $paddingNormal 0;
     background-color: var(--white);
-    border-bottom: 1px solid #e9e9e9;
+    border-bottom: solid 0.5px #e5e5e5;
 
     .left {
 
+        .__menu-hamburger { 
+
+            display: none;
+
+        }
 
         .__logo {
+
+            .--mobile { display: none; }
+
             img {
-                max-height: 44px;
+                width: 138px;
             }
+
         }
 
         .__section-title {
+
             margin-left: $marginLarge;
+
         }
 
     }
@@ -33,37 +44,32 @@ header {
             margin: 0 $marginMedium;
 
             .__icon {
-                img {
-                    height: 18px;
+
+                &.--woop img {
+                    height: 0.93rem;
                 }
-            }
 
-            .--sun {
-                height: 28px;
-            } 
+                &.--sun img {
+                    width: 1rem;
+                }
 
-            .--moon {
-                height: 25px;
-            }
+                &.--moon img {
+                    width: 0.9rem;
+                }
 
-            .__score {
-                margin-left: $marginNormal;
+                &.--lang img {
+                    width: 0.93rem;
+                }
+
             }
 
             .__divider {
+                p { color: #d0d0d0; }
                 margin: 0 $marginNormal;
             }
 
-            &.--badge-primary {
-                border-radius: 0.25rem;
-                padding: $paddingNormal;
-                background-color: var(--primary);
-            }
-
-            &.--badge-mini {
-                border-radius: 1rem;
-                padding: 0.25rem 0.75rem;
-                background-color: #eaeaea;
+            .__theme, .__lang {
+                margin-left: $marginSemi;
             }
 
         }
@@ -108,12 +114,78 @@ header {
 
             }
 
-            .--theme {
+            .__theme {
                 display: none;
             }
 
         }
 
+    }
+
+    @media screen and (max-width: 586px){
+
+        .left {
+
+            .__menu-hamburger { 
+
+                display: flex;
+
+            }
+
+            .__logo {
+
+                position: relative;
+
+                .--desktop { display: none; }
+                .--mobile { display: flex; }
+    
+                img {
+                    width: 138px;
+                }
+
+            }
+    
+        }
+        
+        .right {
+
+            .__nav-item {
+
+                margin: 0 0.25rem;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .__icon {
+
+                    &.--woop {
+
+                        img {
+                            height: 0.9rem;
+                            margin-left: 0.5rem;
+                        }
+
+                    }
+    
+                }
+
+            }
+
+            .__theme {
+                display: none;
+            }
+
+            .__lang {
+                display: none;
+            }
+
+        }
+
+    }
+
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #1b1d31;
+        border-bottom: 0;
     }
 
 }

@@ -1,0 +1,13 @@
+.badge {
+
+    border-radius: 1rem;
+    padding: 0.1rem 0.5rem;
+    background-color: #e8e8e8;
+
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #51557e;
+        border-bottom: 0;
+    }
+
+}

@@ -69,10 +69,14 @@ footer {
 
     }
 
+}
 
-    @media (prefers-color-scheme: dark) {
+html[data-theme='dark'] {
+
+    footer {
+
         background-color: #1b1d31;
-    }
 
+    }
 
 }

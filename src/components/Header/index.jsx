@@ -7,8 +7,11 @@
 import React 	from 'react';
 import Link 	from 'next/link';
 import Badge	from 'components/Badges';
+import { useDarkMode } from 'hooks/useDarkTheme';
 
 const Header = _ => {
+
+	const [theme, toggleTheme] = useDarkMode();
 
 	return (
 		<header className = "header justify-center">
@@ -21,7 +24,10 @@ const Header = _ => {
 							</button>
 						</div>
 						<div className="__logo">
-							<img className="--desktop" src="/images/common/logo.svg" alt="Woonkly Logo"/>
+							{ theme === 'light' ?
+								<img className="--desktop" src="/images/common/logo.svg" alt="Woonkly Logo"/> :
+								<img className="--desktop" src="/images/common/logo-dark.svg" alt="Woonkly Logo"/>
+							}
 							<img className="--mobile" src="/images/common/logo-responsive.svg" alt="Woonkly Logo"/>
 						</div>
 						<div className="__section-title">
@@ -42,7 +48,8 @@ const Header = _ => {
 							</div>
 						</div>
 						<div className="__nav-item __theme row align-center">
-							<button className="__icon btn --btn-transparent --sun responsive-img">
+							<button className="__icon btn --btn-transparent --sun responsive-img" 
+								onClick = { _ => toggleTheme('light') }>
 								<img src="/images/sun.svg" alt="Sun Icon"/>
 							</button>
 							<div className="__divider">
@@ -50,7 +57,8 @@ const Header = _ => {
 									/
 								</p>
 							</div>
-							<button className="__icon btn --btn-transparent --moon responsive-img">
+							<button className="__icon btn --btn-transparent --moon responsive-img"
+								onClick = { _ => toggleTheme('dark') }>
 								<img src="/images/moon.svg" alt="Moon Icon"/>
 							</button>
 						</div>

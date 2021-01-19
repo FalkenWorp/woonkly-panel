@@ -44,9 +44,20 @@
 
     @media (prefers-color-scheme: dark) {
 
-        background-color: #171727;
+        
 
     }
 
+
+}
+
+
+html[data-theme='dark'] {
+
+    .page-stake {
+
+        background-color: #171727;
+
+    }
 
 }

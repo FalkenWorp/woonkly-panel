@@ -40,3 +40,39 @@
     }
 
 }
+
+.modal {
+
+    .--connect {
+
+        .--btn-meta {
+
+            background-color: #edf2f7;
+            justify-content: space-between;
+
+            img { height: 32px; }
+
+        }
+
+    }
+
+}
+
+
+html[data-theme='dark'] {
+
+    .modal {
+
+        .--connect {
+    
+            .--btn-meta {
+                
+                background-color: #282a45;
+    
+            }
+    
+        }
+    
+    }
+
+}

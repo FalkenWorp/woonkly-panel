@@ -1,0 +1,77 @@
+.modal {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(42, 42, 71, 0.6);
+
+    .__container {
+
+        background-color: var(--white);
+
+        .__head {
+
+            position: relative;
+
+
+            .__close {
+                top: -0.6rem;
+                right: 0.5rem;
+                position: absolute;
+            }
+
+        }
+
+        &.--connect {
+
+            min-width: 300px;
+            border-radius: 5px;
+            padding: $paddingSemi;
+
+            .__footer {
+
+                img {
+                    height: 14px;
+                }
+
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 586px){
+        
+        .__container {
+    
+            &.--connect {
+    
+                width: 80%;
+                min-width: 200px;
+    
+            }
+    
+        }
+
+    }
+
+}
+
+
+html[data-theme='dark'] {
+
+    .modal {
+
+        .__container {
+
+            background-color: #1b1d31;
+
+        }
+
+    }
+
+}

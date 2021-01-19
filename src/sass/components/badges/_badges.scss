@@ -4,8 +4,11 @@
     padding: 0.1rem 0.5rem;
     background-color: #e8e8e8;
 
+}
 
-    @media (prefers-color-scheme: dark) {
+html[data-theme='dark'] {
+
+    .badge {
         background-color: #51557e;
         border-bottom: 0;
     }

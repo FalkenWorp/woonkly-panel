@@ -31,9 +31,18 @@ const Header = _ => {
 							<img className="--mobile" src="/images/common/logo-responsive.svg" alt="Woonkly Logo"/>
 						</div>
 						<div className="__section-title">
-							<p className="color-gray weight-semi font-text">
-								Stake Panel
-							</p>
+							<Link href = "/">
+								<a className="color-gray weight-semi font-text">
+									Stake Panel
+								</a>
+							</Link>
+						</div>
+						<div className="__section-title">
+							<Link href = "/feed">
+								<a className="color-gray weight-semi font-text">
+									Feed
+								</a>
+							</Link>
 						</div>
 					</div>
 					<nav className="right full row align-center">

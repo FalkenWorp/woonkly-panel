@@ -1,0 +1,195 @@
+/*
+ * @version 1.1.0
+ * @description Estilos de la página de /feed
+*/
+
+.page-feed {
+
+    background-color: #fafafa;
+
+    .main {
+
+        min-height: 80vh;
+        padding: $paddingLarge 0;
+
+        .--stake-title-mobile {
+            display: none;
+        }
+
+        .cards-container {
+            justify-content: center;
+        }
+
+        .categories {
+
+            width: 22.5%;
+
+            .__title {
+
+                span { color: #7d8ea3; } 
+
+            }
+
+            .__link {
+                color: #000000;
+            }
+
+        }
+
+        .feed {
+
+            width: 57.5%;
+
+            .__post-creator {
+
+                border-radius: 5px;
+                background-color: var(--white);
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+
+                .__head {
+                    padding: $paddingMedium;
+                }
+
+            }
+
+            .__divider {
+                margin: $marginMedium 0;
+                border: solid 0.5px #e9edf2;
+            }
+
+
+            .__amount {
+
+                padding: 0 $paddingMedium;
+
+                img { height: 1.2rem; }
+
+            }
+
+            .__type {
+
+                padding: 0 $paddingMedium;
+                padding-bottom: 0.75rem;
+                justify-content: space-between;
+
+                button {
+                    min-width: 120px;
+                }
+
+            }
+
+        }
+
+        .aside {
+
+            width: 20%;
+            border-radius: 5px;
+            align-self: flex-start;
+            background-color: var(--white);
+            padding: $paddingSemi $paddingMedium;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+
+            .__item {
+
+                .__icon {
+
+                    img { 
+                        height: 1rem;
+                        margin-top: 0.3rem;
+                    }
+
+                    .--share-icon {
+                        width: 1rem;
+                    }
+
+                }
+
+            }
+
+            .__information {
+
+                p {
+                    color: #000000;
+                }
+
+            }
+
+        }
+
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        .main {
+
+            padding-top: 0;
+
+            h2 {
+                font-size: $fontTriple;
+            }
+
+            .--stake-title-mobile {
+                display: flex;
+            }
+
+        }
+
+    }
+
+}
+
+
+html[data-theme='dark'] {
+
+    .page-feed {
+
+        background-color: #171727;
+
+        .categories {
+
+            .__title {
+    
+                span { color: #51557e; } 
+    
+            }
+    
+            .__link {
+                color: #FFFFFF;
+            }
+    
+        }
+
+        .feed {
+
+            .__post-creator {
+
+                background-color: #1b1d31;
+
+            }
+
+            .__divider {
+
+                border: solid 0.5px #2d3055;
+
+            }
+
+        }
+
+        .aside {
+
+            background-color: #1b1d31;
+
+            .__information {
+
+                p {
+                    color: white;
+                }
+
+            }
+
+        }
+
+    }
+
+}

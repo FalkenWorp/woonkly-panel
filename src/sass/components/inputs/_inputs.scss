@@ -1,0 +1,32 @@
+
+textarea {
+    resize: none;
+    padding: $paddingNormal;
+}
+
+.input-container {
+
+    .input-text {
+        width: 80px;
+        padding: $paddingNormal 0.75rem;
+        border: solid 0.5px #d0dae6;
+    }
+
+}
+
+html[data-theme='dark'] {
+
+    textarea {
+        background-color: #1b1d31;
+    }
+    
+    .input-container {
+    
+        .input-text {
+            border: solid 0.5px #d0dae6;
+            background-color: #1b1d31;
+        }
+    
+    }
+
+}

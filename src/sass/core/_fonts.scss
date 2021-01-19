@@ -6,6 +6,7 @@
 /*    FONT FAMILIES    */
 
 $OpenSans: 'Open Sans', sans-serif;
+$Roboto: 'Roboto', sans-serif;
 
 
 /*    FONT SIZES    */
@@ -63,9 +64,14 @@ $fontTriple:    2.5rem;
 
 /*    FONT WEIGHTS 
 
-    - Based on 'OpenSans'
+	- Based on 'OpenSans',
+	- Based on 'Roboto'
 
 */
+
+.--font-roboto {
+	font-family: $Roboto;
+}
 
 $weightRegular: 400;
 $weightMedium: 	500;

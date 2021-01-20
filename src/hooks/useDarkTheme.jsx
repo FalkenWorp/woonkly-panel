@@ -36,6 +36,7 @@ export const useDarkMode = _ => {
 		} else if (localTheme) {
 
 			setTheme(localTheme);
+			DOM.setAttribute('data-theme', localTheme);
 
 		} else {
 

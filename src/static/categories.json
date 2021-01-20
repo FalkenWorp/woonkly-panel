@@ -1,0 +1,44 @@
+{
+    "categories": [
+        {
+            "name": "Marketing",
+            "url": "/feed/marketing"
+        },
+        {
+            "name": "Fitness",
+            "url": "/feed/fitness"
+        },
+        {
+            "name": "Cryptos",
+            "url": "/feed/cryptos"
+        },
+        {
+            "name": "Politics",
+            "url": "/feed/politics"
+        },
+        {
+            "name": "Sport",
+            "url": "/feed/sports"
+        },
+        {
+            "name": "Technology",
+            "url": "/feed/technology"
+        },
+        {
+            "name": "World",
+            "url": "/feed/world"
+        },
+        {
+            "name": "Space",
+            "url": "/feed/space"
+        },
+        {
+            "name": "Entertainment",
+            "url": "/feed/etertainment"
+        },
+        {
+            "name": "Foods",
+            "url": "/feed/foods"
+        }
+    ]
+}

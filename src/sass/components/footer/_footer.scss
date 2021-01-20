@@ -77,6 +77,23 @@ html[data-theme='dark'] {
 
         background-color: #1b1d31;
 
+        .left {
+
+            a {
+
+                color: #51557e;
+                padding: 0 $paddingSemi;
+
+            }
+
+        }
+
+        .right {
+
+            p { color: #51557e; }
+
+        }
+
     }
 
 }

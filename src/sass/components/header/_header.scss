@@ -31,6 +31,15 @@ header {
 
             margin-left: $marginLarge;
 
+            a { 
+                color: #797979; 
+
+                &.--active {
+                    color: var(--primary);
+                }
+            }
+
+
         }
 
     }
@@ -191,6 +200,17 @@ html[data-theme='dark'] {
 
         background-color: #1b1d31;
         border-bottom: 0;
+
+
+        .left {
+
+            .__section-title {
+
+                a { color: #ffffff; }
+
+            }
+
+        }
 
     }
 

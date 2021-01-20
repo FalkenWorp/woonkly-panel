@@ -23,6 +23,19 @@
         background-color: transparent;
     }
 
+    &.--btn-pills {
+        
+        color: #7d8ea3;
+        border-radius: 12px;
+        padding: 0.4rem 0.95rem;
+        background-color: transparent;
+
+        &.--active {
+            color: #00bdec;
+            background-color: #e0f9ff;
+        }
+    }
+
 
 }
 
@@ -35,6 +48,91 @@
         .btn {
             width: 86px;
             font-size: 0.75rem;
+        }
+
+    }
+
+}
+
+.page-feed {
+
+    .__post-creator {
+
+        .__types {
+
+            button {
+                min-width: 100px;
+                max-width: 100px;
+                background-color: var(--white);
+
+            }
+
+            img {
+                height: 1rem;
+            }
+
+        }
+
+        .__deploy {
+
+            button {
+                min-width: 120px;
+            }
+
+        }
+
+    }
+
+    .__post {
+
+        .__footer {
+
+            .__options {
+
+                button {
+
+                    min-width: 80px;
+
+                }
+
+                .--btn-primary-alt {
+
+                    color: var(--primary);
+                    background-color: #e0f9ff;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 586px) {
+        
+        .__post {
+
+            .__footer {
+    
+                .__options {
+    
+                    button {
+    
+                        min-width: 95%;
+    
+                    }
+    
+                    .--btn-primary-alt {
+    
+                        color: var(--primary);
+                        background-color: #e0f9ff;
+    
+                    }
+    
+                }
+    
+            }
+    
         }
 
     }
@@ -60,6 +158,55 @@
 
 
 html[data-theme='dark'] {
+
+    .btn {
+
+        &.--btn-pills {
+        
+            color: #51557e;
+    
+            &.--active {
+                color: var(--primary);
+                background-color: #252843;
+            }
+        }
+
+    }
+
+    .page-feed {
+
+        .__post-creator {
+    
+            .__types {
+    
+                button {
+                    background-color: #1b1d31;
+                }
+    
+            }
+    
+        }
+
+        .__post {
+
+            .__footer {
+    
+                .__options {
+
+                    .--btn-primary-alt {
+
+                        background-color: #252843;
+                        border: 2px solid #252843;
+
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+    }
 
     .modal {
 

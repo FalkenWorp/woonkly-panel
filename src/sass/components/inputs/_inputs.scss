@@ -1,32 +1,46 @@
 
-textarea {
-    resize: none;
-    padding: $paddingNormal;
+input, select, option, label, textarea {
+    font-family: $Roboto;
 }
 
 .input-container {
 
+    .input-textarea {
+
+        resize: none;
+        padding: $paddingNormal;
+        background-color: var(--white);
+    
+    }
+
     .input-text {
+
         width: 80px;
         padding: $paddingNormal 0.75rem;
         border: solid 0.5px #d0dae6;
+
     }
 
 }
 
+
 html[data-theme='dark'] {
 
-    textarea {
-        background-color: #1b1d31;
-    }
-    
     .input-container {
-    
-        .input-text {
-            border: solid 0.5px #d0dae6;
+
+        .input-textarea {
+
             background-color: #1b1d31;
+
         }
     
+        .input-text {
+
+            border: solid 0.5px #d0dae6;
+            background-color: #1b1d31;
+
+        }
+
     }
 
 }

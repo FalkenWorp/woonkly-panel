@@ -5,7 +5,10 @@
 */
 
 import Head from 'next/head';
-import Link from 'next/link';
+import FeedCategories from 'components/Navigation/FeedCategories';
+import PostCreator  from 'components/Posts/Creator';
+import PostPills    from 'components/Posts/PostPills';
+import PostImage    from 'components/Posts/PostImage';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -26,125 +29,20 @@ const PageFeed = _ => {
 					<div className="container column">
                         <div className="--stake-title-mobile column">
 							<p className="font-small weight-semi color-black">
-								Skate Panel
+								Feed
 							</p>
 							<div className="white-space-16"></div>
 						</div>
                         <div className="row-responsive">
-                            <div className="categories column">
-                                <div className="__title">
-                                    <span className="weight-bold">
-                                        CATEGORIES
-                                    </span>
-                                </div>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Marketing
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Fitness
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Cryptos
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Marketing
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Sport
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Technology
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        World
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Space
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Entertainment
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <Link href = "#">
-                                    <a className="weight-semi __link">
-                                        Foods
-                                    </a>
-                                </Link>
-                                <div className="white-space-16"></div>
-                                <div className="__divider"></div>
-                                <div className="white-space-16"></div>
-                            </div>
+                            <FeedCategories />
                             <div className="feed column">
-                                <div className="__post-creator column">
-                                    <div className="__head row">
-                                        <div className="__profile-picture responsive-img --margin-right-8">
-                                            <img src="/images/profile.jpg" alt="Profile picture" />
-                                        </div>
-                                        <div className="input-container full">
-                                            <textarea rows="5" className="full --font-roboto" placeholder="Share your Thoughts..."></textarea>
-                                        </div>
-                                    </div>
-                                    <div className="__divider full"></div>
-                                    <div className="__amount row-responsive">
-                                        <div className="input-container">
-                                            <input type="text" className="input-text font-tiny color-black weight-medium --font-roboto"  value = { 400 } />
-                                        </div>
-                                        <div className="__type-cur --margin-left-16 row align-center">
-                                            <div className="__icon reponsive-img">
-                                                <img src="/images/bnb.svg" alt="BNB Currency"/>
-                                            </div>
-                                            <p className="color-black weight-medium font-tiny --margin-left-8 --font-roboto">
-                                                BNB
-                                            </p>
-                                        </div>
-                                        <div className="input-container --margin-left-32">
-                                            <input type="text" className="input-text font-tiny color-black weight-medium --font-roboto"  value = { "16,000" } />
-                                        </div>
-                                        <div className="__type-cur --margin-left-8 row align-center">
-                                            <p className="color-black weight-medium font-tiny --margin-left-8 --font-roboto">
-                                                Shares
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="__divider full"></div>
-                                    <div className="__type row">
-                                        <div className="__types">
-
-                                        </div>
-                                        <div className="__deploy">
-                                            <button className="btn --btn-primary color-white">
-                                                Deploy
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <PostCreator />
+                                <div className="white-space-16"></div>
+                                <PostPills />
+                                <div className="white-space-16"></div>
+                                <PostImage />
+                                <PostImage />
+                                <PostImage />
                             </div>
                             <div className="aside column --margin-left-16">
                                 <div className="__item row">

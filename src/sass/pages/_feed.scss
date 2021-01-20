@@ -22,7 +22,7 @@
 
         .categories {
 
-            width: 22.5%;
+            width: 20%;
 
             .__title {
 
@@ -38,7 +38,7 @@
 
         .feed {
 
-            width: 57.5%;
+            width: 60%;
 
             .__post-creator {
 
@@ -53,7 +53,6 @@
             }
 
             .__divider {
-                margin: $marginMedium 0;
                 border: solid 0.5px #e9edf2;
             }
 
@@ -72,11 +71,9 @@
                 padding-bottom: 0.75rem;
                 justify-content: space-between;
 
-                button {
-                    min-width: 120px;
-                }
-
             }
+
+            @import '../components/posts/post';
 
         }
 
@@ -131,6 +128,41 @@
 
             .--stake-title-mobile {
                 display: flex;
+                margin-top: $marginLarge;
+            }
+
+            .categories {
+                display: none;
+            }
+
+            .feed {
+
+                order: 2;
+                width: 100%;
+
+                .__post-creator {
+
+                    .__divider, .__amount, .__type {
+                        display: none;
+                    }
+
+                }
+
+            }
+
+            .aside {
+
+                order: 1;
+                padding: 0;
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: $marginNormal;
+
+                .__item {
+                    padding: $paddingNormal $paddingMedium;
+                    padding-right: 0;
+                }
+
             }
 
         }
@@ -146,46 +178,60 @@ html[data-theme='dark'] {
 
         background-color: #171727;
 
-        .categories {
+        .main {
 
-            .__title {
-    
-                span { color: #51557e; } 
-    
-            }
-    
-            .__link {
-                color: #FFFFFF;
-            }
-    
-        }
+            .categories {
 
-        .feed {
-
-            .__post-creator {
-
-                background-color: #1b1d31;
-
-            }
-
-            .__divider {
-
-                border: solid 0.5px #2d3055;
-
-            }
-
-        }
-
-        .aside {
-
-            background-color: #1b1d31;
-
-            .__information {
-
-                p {
-                    color: white;
+                .__title {
+        
+                    span { color: #51557e; } 
+        
                 }
+        
+                .__link {
+                    color: #FFFFFF;
+                }
+        
+            }
+    
+            .feed {
+    
+                .__post-creator {
+    
+                    background-color: #1b1d31;
+    
+                }
+    
+                .__divider {
+    
+                    border: solid 0.5px #2d3055;
+    
+                }
+    
+                .__post {
 
+                    background-color: #1b1d31;
+                
+                    &:first-child {
+                        border: solid 0.5px transparent;
+                    }
+                
+                }
+    
+            }
+    
+            .aside {
+    
+                background-color: #1b1d31;
+    
+                .__information {
+    
+                    p {
+                        color: white;
+                    }
+    
+                }
+    
             }
 
         }

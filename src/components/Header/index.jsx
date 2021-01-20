@@ -5,6 +5,7 @@
 */
 
 import React 	from 'react';
+import NavLink	from 'helpers/NavLink';
 import Link 	from 'next/link';
 import Badge	from 'components/Badges';
 import { useDarkMode } from 'hooks/useDarkTheme';
@@ -24,25 +25,25 @@ const Header = _ => {
 							</button>
 						</div>
 						<div className="__logo">
-							{ theme === 'light' ?
-								<img className="--desktop" src="/images/common/logo.svg" alt="Woonkly Logo"/> :
-								<img className="--desktop" src="/images/common/logo-dark.svg" alt="Woonkly Logo"/>
+							{ theme === 'dark' ?
+								<img className="--desktop" src="/images/common/logo-dark.svg" alt="Woonkly Logo"/> :
+								<img className="--desktop" src="/images/common/logo.svg" alt="Woonkly Logo"/>
 							}
 							<img className="--mobile" src="/images/common/logo-responsive.svg" alt="Woonkly Logo"/>
 						</div>
 						<div className="__section-title">
-							<Link href = "/">
-								<a className="color-gray weight-semi font-text">
+							<NavLink href = "/" activeClassName = "--active">
+								<a className="weight-semi font-text">
 									Stake Panel
 								</a>
-							</Link>
+							</NavLink>
 						</div>
 						<div className="__section-title">
-							<Link href = "/feed">
-								<a className="color-gray weight-semi font-text">
+							<NavLink href = "/feed" activeClassName = "--active">
+								<a className="weight-semi font-text">
 									Feed
 								</a>
-							</Link>
+							</NavLink>
 						</div>
 					</div>
 					<nav className="right full row align-center">

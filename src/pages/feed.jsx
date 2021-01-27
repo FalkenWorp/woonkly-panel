@@ -24,7 +24,7 @@ const PageFeed = _ => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 			</Head>
 			<main className="column full">
-				<Header />
+				<Header showProfile = { true } />
 				<div className="main justify-center">
 					<div className="container column">
                         <div className="--stake-title-mobile column">
@@ -40,7 +40,7 @@ const PageFeed = _ => {
                                 <div className="white-space-16"></div>
                                 <PostPills />
                                 <div className="white-space-16"></div>
-                                <PostImage />
+                                <PostImage boosted = { true } />
                                 <PostImage />
                                 <PostImage />
                             </div>

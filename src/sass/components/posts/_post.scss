@@ -1,5 +1,6 @@
 .__post {
 
+    position: relative;
     border-radius: 5px;
     margin-bottom: $marginLarge;
     padding: 0.8rem $paddingMedium;
@@ -13,7 +14,23 @@
 
     .__header {
 
-        justify-content: space-between;
+        .__author {
+
+            align-items: center;
+
+            .__verified {
+
+                img { max-height: 1rem; }
+
+            }
+
+            .__follow {
+
+                button { background-color: transparent; }
+
+            }
+
+        }
 
         .__date {
 
@@ -31,6 +48,16 @@
 
     }
 
+    .__boosted {
+
+        top: 0;
+        right: 1rem;
+        position: absolute;
+
+        img { max-height: 2rem; }
+
+    }
+
     .__text {
         
         p {
@@ -45,26 +72,31 @@
 
     }
 
-    .__footer {
+    .__shares {
 
         justify-content: space-between;
 
-        .__author {
+        .__contacts {
 
             padding-top: 0.25rem;
-            justify-content: space-between;
 
-            img {
+            .__image {
 
-                width: 2rem;
-                height: 2rem;
-                border-radius: 50%;
-                object-fit: contain;
-                object-position: center;
+                img { max-height: 1.5rem; }
 
             }
 
-            .__shares {
+            // img {
+
+            //     width: 2rem;
+            //     height: 2rem;
+            //     border-radius: 50%;
+            //     object-fit: contain;
+            //     object-position: center;
+
+            // }
+
+            .__shares-count {
 
                 p { color: #7d8ea3; }
 

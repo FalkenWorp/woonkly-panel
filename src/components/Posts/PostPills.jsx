@@ -11,6 +11,11 @@ const PostPills = _ => {
             </div>
             <div className="btn-container">
                 <button className="btn --btn-pills font-text weight-medium">
+                    New
+                </button>
+            </div>
+            <div className="btn-container">
+                <button className="btn --btn-pills font-text weight-medium">
                     My friends
                 </button>
             </div>

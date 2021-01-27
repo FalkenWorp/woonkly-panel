@@ -10,7 +10,7 @@ import Link 	from 'next/link';
 import Badge	from 'components/Badges';
 import { useDarkMode } from 'hooks/useDarkTheme';
 
-const Header = _ => {
+const Header = ({ showProfile = false }) => {
 
 	const [theme, toggleTheme] = useDarkMode();
 
@@ -89,7 +89,13 @@ const Header = _ => {
 								0x5C...213A
 							</button>
 						</div>
-						<Badge value = "BEP20" />
+						{ showProfile ? 
+							<div className="profile-picture responsive-img">
+								<img src="/images/common/mr-santos-profile.png" alt="Mr Santos Profile"/>
+							</div>	
+						:
+							<Badge value = "BEP20" />
+						}
 					</nav>
 				</div>
 			</div>

@@ -14,6 +14,7 @@
     --warning:       #f39c12;
     --danger:        #c0392b;
     --info:          #258395;
+    --gold:          #a88e53;
 
     --black:     #292a46;
     --white:     #FFFFFF;
@@ -58,6 +59,10 @@
 
 .color-info {
     color: var(--info);
+}
+
+.color-gold {
+    color: var(--gold);
 }
 
 .color-gray {

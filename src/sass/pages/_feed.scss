@@ -50,6 +50,19 @@
                     padding: $paddingMedium;
                 }
 
+                .__post-textarea {
+
+                    position: relative;
+
+                    .--text-limit {
+                        bottom: 0;
+                        right: 0;
+                        color: #adbed3;
+                        position: absolute;
+                    }
+
+                }
+
             }
 
             .__divider {
@@ -61,7 +74,7 @@
 
                 padding: 0 $paddingMedium;
 
-                img { height: 1.2rem; }
+                img { height: 2rem; }
 
             }
 

@@ -9,6 +9,10 @@
         background-color: var(--primary);
     }
 
+    &.--btn-gold {
+        background-image: linear-gradient(135deg, #a58b50 9%, #ddc48b 124%);
+    }
+
     &.--btn-reset {
         margin: 0;
         padding: 0;
@@ -21,6 +25,13 @@
 
     &.--btn-transparent {
         background-color: transparent;
+    }
+
+    &.--btn-primary-alt {
+
+        color: var(--primary);
+        background-color: #e0f9ff;
+
     }
 
     &.--btn-pills {
@@ -85,7 +96,7 @@
 
     .__post {
 
-        .__footer {
+        .__shares {
 
             .__options {
 

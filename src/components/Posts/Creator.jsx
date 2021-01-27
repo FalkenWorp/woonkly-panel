@@ -8,8 +8,11 @@ const PostCreator = _ => {
                 <div className="__profile-picture responsive-img --margin-right-8">
                     <img src="/images/profile.jpg" alt="Profile picture" />
                 </div>
-                <div className="input-container full">
+                <div className="input-container full __post-textarea">
                     <textarea rows="4" className="input-textarea full color-black --font-roboto" placeholder="Share your Thoughts..."></textarea>
+                    <span className="font-mini --text-limit">
+                        0/180
+                    </span>
                 </div>
             </div>
             <div className="__divider full"></div>
@@ -20,11 +23,8 @@ const PostCreator = _ => {
                 </div>
                 <div className="row align-center --margin-left-16">
                     <div className="__icon reponsive-img">
-                        <img src="/images/bnb.svg" alt="BNB Currency"/>
+                        <img src="/images/post/metamask.png" alt="Metamask Icon"/>
                     </div>
-                    <p className="color-black weight-medium font-tiny --margin-left-8 --font-roboto">
-                        BNB
-                    </p>
                 </div>
                 <div className="input-container --margin-left-32">
                     <input type="text" className="input-text font-tiny color-black weight-medium" readOnly value = { "16,000" } />
@@ -33,6 +33,11 @@ const PostCreator = _ => {
                     <p className="color-black weight-medium font-tiny --margin-left-8 --font-roboto">
                         Shares
                     </p>
+                </div>
+                <div className="btn-container --margin-left-16">
+                    <button className="btn weight-semi --btn-primary-alt font-mini">
+                        Advanced
+                    </button>
                 </div>
             </div>
             <div className="white-space-8"></div>
@@ -83,7 +88,7 @@ const PostCreator = _ => {
                 </div>
                 <div className="__deploy">
                     <button className="btn --btn-primary color-white">
-                        Deploy
+                        Publish
                     </button>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PostImage = ({ boosted = false }) => {
+const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) => {
 
     return(
         <div className="__post --image column">
@@ -42,7 +42,7 @@ const PostImage = ({ boosted = false }) => {
             </div>
             <div className="white-space-16"></div>
             <div className="__image responsive-img">
-                <img src="/images/post-image-min.jpg" alt="Post picture" />
+                <img src = { image } alt="Post picture" />
             </div>
             <div className="white-space-32"></div>
             <div className="__shares row-responsive">

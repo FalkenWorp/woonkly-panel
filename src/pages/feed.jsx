@@ -41,8 +41,8 @@ const PageFeed = _ => {
                                 <PostPills />
                                 <div className="white-space-16"></div>
                                 <PostImage boosted = { true } />
-                                <PostImage />
-                                <PostImage />
+                                <PostImage image = "/images/post/post-city.jpg" />
+                                <PostImage image = "/images/post/post-library.jpg" />
                             </div>
                             <div className="aside column --margin-left-16">
                                 <div className="__item row">

@@ -24,6 +24,45 @@ input, select, option, label, textarea {
 }
 
 
+.page-swap {
+
+    .input-container {
+    
+        .input-text {
+    
+            width: 60%;
+            padding: $paddingMedium 0.75rem;
+    
+        }
+
+        .input-select {
+    
+            width: 40%;
+            border: solid 0.5px #d0dae6;
+            padding: $paddingMedium 0.75rem;
+    
+        }
+    
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        .input-container {
+    
+            .input-text { width: 50%; }
+    
+            .input-select { width: 50%; }
+        
+        }
+
+    }
+
+}
+
+
+
+
+
 html[data-theme='dark'] {
 
     .input-container {
@@ -41,6 +80,28 @@ html[data-theme='dark'] {
 
         }
 
+    }
+
+    .page-swap {
+
+        .input-container {
+
+            .input-text {
+
+                border: solid 0.5px #373a57;
+                background-color: #1b1d31;
+    
+            }
+    
+            .input-select {
+
+                background-color: #1b1d31;
+                border: solid 0.5px #373a57;
+        
+            }
+        
+        }
+    
     }
 
 }

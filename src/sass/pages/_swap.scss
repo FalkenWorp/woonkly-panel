@@ -1,0 +1,148 @@
+/*
+ * @version 1.1.0
+ * @description Estilos de la página de /
+*/
+
+.page-swap {
+
+    background-color: #f5f7fa;
+
+    .main {
+
+        min-height: 80vh;
+        padding: $paddingLarge 0;
+
+        .__card-container {
+            
+            .__card-swap {
+
+                width: 35%;
+                border-radius: 5px;
+                padding: $paddingLarge;
+                background-color: var(--white);
+
+            }
+
+        }
+
+    }
+
+
+    @media screen and (max-width: 1440px) {
+
+        .main {
+
+            .__card-container {
+            
+                .__card-swap {
+    
+                    width: 40%;
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .main {
+
+            .__card-container {
+            
+                .__card-swap {
+    
+                    width: 45%;
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        .main {
+
+            .__card-container {
+            
+                .__card-swap {
+    
+                    width: 55%;
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .main {
+
+            .__card-container {
+            
+                .__card-swap {
+    
+                    width: 70%;
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 586px) {
+
+        .main {
+
+            .__card-container {
+
+                .__subtitle {
+
+                    h3 { font-size: 1.25rem; }
+
+                }
+            
+                .__card-swap {
+    
+                    width: 100%;
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+
+
+html[data-theme='dark'] {
+
+    .page-swap {
+
+        background-color: #171727;
+
+        .__card-container {
+            
+            .__card-swap {
+
+                background-color: #1b1d31;
+
+            }
+
+        }
+
+    }
+
+}

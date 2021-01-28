@@ -10,7 +10,7 @@ import Link 	from 'next/link';
 import Badge	from 'components/Badges';
 import { useDarkMode } from 'hooks/useDarkTheme';
 
-const Header = ({ showProfile = false }) => {
+const Header = () => {
 
 	const [theme, toggleTheme] = useDarkMode();
 
@@ -30,6 +30,13 @@ const Header = ({ showProfile = false }) => {
 								<img className="--desktop" src="/images/common/logo.svg" alt="Woonkly Logo"/>
 							}
 							<img className="--mobile" src="/images/common/logo-responsive.svg" alt="Woonkly Logo"/>
+						</div>
+						<div className="__section-title">
+							<NavLink href = "/swap" activeClassName = "--active">
+								<a className="weight-semi font-text">
+									Swap
+								</a>
+							</NavLink>
 						</div>
 						<div className="__section-title">
 							<NavLink href = "/" activeClassName = "--active">
@@ -89,13 +96,9 @@ const Header = ({ showProfile = false }) => {
 								0x5C...213A
 							</button>
 						</div>
-						{ showProfile ? 
-							<div className="profile-picture responsive-img">
-								<img src="/images/common/mr-santos-profile.png" alt="Mr Santos Profile"/>
-							</div>	
-						:
-							<Badge value = "BEP20" />
-						}
+						<div className="profile-picture responsive-img">
+							<img src="/images/common/mr-santos-profile.png" alt="Mr Santos Profile"/>
+						</div>
 					</nav>
 				</div>
 			</div>

@@ -7,7 +7,7 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
             <div className="__header row align-center">
                 <div className="__author row">
                     <div className="responsive-img">
-                        <img src="/images/author-thumb.jpg" alt="Author picture"/>
+                        <img src="/images/post/mr-santos.png" alt="Author picture"/>
                     </div>
                     <div className="__name --margin-left-8">
                         <p className="color-black weight-medium --font-roboto">

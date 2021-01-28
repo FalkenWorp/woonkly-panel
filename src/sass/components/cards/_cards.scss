@@ -2,8 +2,9 @@
 
     position: relative;
     border-radius: 0.5rem;
+    justify-content: center;
     background-color: var(--white);
-    padding: $paddingSemi 3.5rem 1.25rem;
+    padding: $paddingSemi 5rem 1.25rem;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.04);
 
     .__icon {
@@ -14,6 +15,30 @@
 
     .--square {
         width: 40px;
+    }
+
+    &.--large {
+
+        padding: $paddingSemi 2rem $paddingSemi 1.75rem;
+
+        .__icon {
+
+            img { height: 1.25rem; }
+    
+        }
+
+        .__left {
+            min-width: 240px;
+        }
+
+        .badge {
+
+            top: 0.75rem;
+            right: 1.75rem;
+            position: absolute;
+    
+        }
+
     }
 
     &.--small {
@@ -78,15 +103,89 @@
 
     }
 
+    @media screen and (max-width: 768px) {
+
+        &.--large {
+
+            padding: $paddingSemi 2rem $paddingSemi 1.75rem;
+    
+            .__icon {
+    
+                img { height: 1.25rem; }
+        
+            }
+    
+            .__left {
+                min-width: 180px;
+            }
+    
+            .badge {
+    
+                top: 0.75rem;
+                right: 1.75rem;
+                position: absolute;
+        
+            }
+    
+        }
+
+    }
 
     @media screen and (max-width: 586px){
 
         width: 100%;
+        margin: $marginNormal 0;
+        padding: $paddingSemi 0 1.25rem;
 
         .__icon {
     
             img { height: 2rem; }
 
+        }
+
+        &.--large {
+
+            flex-direction: column;
+            padding: $paddingSemi 0;
+    
+            .__icon {
+    
+                img { height: 2rem; }
+        
+            }
+    
+            .__left {
+
+                min-width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                h3 { 
+
+                    margin-bottom: 0.5rem;
+                    font-size: $fontLarge; 
+
+                }
+
+                h4 { margin-bottom: 2rem; } 
+
+            }
+
+            .__right {
+
+                align-items: center;
+                justify-content: center;
+
+            }
+    
+            .badge {
+    
+                top: 0.75rem;
+                right: 1.75rem;
+                position: absolute;
+        
+            }
+    
         }
         
         &.--small {

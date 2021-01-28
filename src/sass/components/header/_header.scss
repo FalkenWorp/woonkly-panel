@@ -135,9 +135,15 @@ header {
 
         .left {
 
+            width: 32.5%;
+
             .__menu-hamburger { 
 
                 display: flex;
+
+                button { background-color: transparent; }
+
+                img { max-height: 1.5rem; }
 
             }
 
@@ -146,10 +152,15 @@ header {
                 position: relative;
 
                 .--desktop { display: none; }
-                .--mobile { display: flex; }
-    
-                img {
-                    width: 138px;
+                
+
+                .--mobile { 
+
+                    width: auto;
+                    display: flex; 
+                    max-height: 2.25rem;
+                    margin-left: $marginMedium;
+
                 }
 
             }

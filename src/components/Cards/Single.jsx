@@ -22,7 +22,7 @@ const CardSingle = ({ icon, iconName, value, description }) => {
                 <img src = { icon } alt = { iconName } />
             </div>
             <div className="white-space-16"></div>
-            <h3 className="text-center weight-bold font-semi">
+            <h3 className="text-center weight-bold font-large">
                 { value }
             </h3>
             <div className="white-space-16"></div>

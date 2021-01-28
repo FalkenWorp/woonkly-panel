@@ -7,7 +7,6 @@
 import React 	from 'react';
 import NavLink	from 'helpers/NavLink';
 import Link 	from 'next/link';
-import Badge	from 'components/Badges';
 import { useDarkMode } from 'hooks/useDarkTheme';
 
 const Header = () => {

@@ -5,7 +5,7 @@
 
 .page-stake {
 
-    background-color: #fafafa;
+    background-color: #f5f7fa;
 
     .main {
 
@@ -29,12 +29,21 @@
 
             padding-top: 0;
 
-            h2 {
-                font-size: $fontTriple;
+            .__main-title {
+
+                h2 { text-align: left; }
+
             }
 
+            h2 { font-size: $fontTriple; }
+
             .--stake-title-mobile {
+
+                width: 100%;
                 display: flex;
+
+                p { text-align: left; } 
+
             }
 
         }
@@ -42,9 +51,20 @@
     }
 
 
-    @media (prefers-color-scheme: dark) {
-
+    @media screen and (max-width: 586px) {
         
+        .main {
+
+            .__cards-container {
+
+                width: 100%;
+                flex-direction: column;
+
+                .--column { margin-left: 0; }
+
+            }
+
+        }
 
     }
 

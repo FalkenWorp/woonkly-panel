@@ -263,6 +263,7 @@ img {
 
 
 
+
 /* MEDIA QUERIES
    =============================
 */
@@ -286,5 +287,11 @@ img {
 @media screen and (max-width: 576px) {
 
     .container { width: 92%; }
+
+    .--hidden-mobile {
+    
+        display: none;
+
+    }
 
 }

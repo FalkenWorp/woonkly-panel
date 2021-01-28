@@ -15,36 +15,39 @@ import Link     from 'next/link';
 import Bagde    from 'components/Badges';
 import usePortal from 'react-useportal';
 
-const CardShared = ({ icon, iconName, value, description, badgeValue, isCompounded = false }) => {
+const CardLarge = ({ icon, iconName, value, description, badgeValue, isCompounded = false }) => {
 
     const { openPortal, closePortal, isOpen, Portal } = usePortal();
 
     return(
-        <div className="__card column --small --large">
-            <div className="__icon justify-center">
-                <img src = { icon } alt = { iconName } />
+        <div className="__card row --large">
+            <div className="__left column">
+                <div className="__icon">
+                    <img src = { icon } alt = { iconName } />
+                </div>
+                <div className="white-space-8"></div>
+                <h3 className="weight-bold font-semi">
+                    { value }
+                </h3>
+                <div className="white-space-8"></div>
+                <h4 className="font-tiny weight-semi">
+                    { description }
+                </h4>
             </div>
-            <div className="white-space-16"></div>
-            <h3 className="text-center weight-bold font-medium">
-                { value }
-            </h3>
-            <div className="white-space-8"></div>
-            <h4 className="text-center font-tiny weight-semi">
-                { description }
-            </h4>
-            <div className="white-space-24"></div>
-            <div className="btn-container --compound justify-center">
-                <button className="btn --btn-primary --margin-right-4 color-white weight-semi" 
-                    onClick = { openPortal }>
-                    Collect
-                </button>
-                { isCompounded &&
-                    <button className="btn --btn-ghost --margin-left-4 color-primary weight-semi">
-                        Compound
+            <div className="__right row align-end">
+                <div className="btn-container --compound justify-center">
+                    <button className="btn --btn-primary --margin-right-4 color-white weight-semi" 
+                        onClick = { openPortal }>
+                        Collect
                     </button>
-                }
+                    { isCompounded &&
+                        <button className="btn --btn-ghost --margin-left-4 color-primary weight-semi">
+                            Compound
+                        </button>
+                    }
+                </div>
+                <Bagde value = { badgeValue } />
             </div>
-            <Bagde value = { badgeValue } />
             { isOpen &&
                 <Portal>
                     <div className="modal column">
@@ -97,4 +100,4 @@ const CardShared = ({ icon, iconName, value, description, badgeValue, isCompound
 
 };
 
-export default CardShared;
+export default CardLarge;

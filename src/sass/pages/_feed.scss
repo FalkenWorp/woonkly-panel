@@ -12,8 +12,17 @@
         min-height: 80vh;
         padding: $paddingLarge 0;
 
-        .--stake-title-mobile {
-            display: none;
+        .__left-asides {
+
+            width: 17.5%;
+            margin-right: $marginMedium;
+
+            .__title {
+
+                span { color: #7d8ea3; } 
+
+            }
+
         }
 
         .cards-container {
@@ -21,8 +30,6 @@
         }
 
         .categories {
-
-            width: 20%;
 
             .__title {
 
@@ -32,6 +39,16 @@
 
             .__link {
                 color: #000000;
+            }
+
+        }
+
+        .recent-shares {
+            
+            .__description {
+
+                p { width: 80%; }
+
             }
 
         }
@@ -92,7 +109,7 @@
 
         .aside {
 
-            width: 20%;
+            width: 22.5%;
             border-radius: 5px;
             align-self: flex-start;
             background-color: var(--white);
@@ -139,14 +156,11 @@
                 font-size: $fontTriple;
             }
 
-            .--stake-title-mobile {
-                display: flex;
-                margin-top: $marginLarge;
-            }
-
             .categories {
                 display: none;
             }
+
+            .recent-shares { display: none; }
 
             .feed {
 
@@ -169,7 +183,7 @@
                 padding: 0;
                 width: 100%;
                 margin-left: 0;
-                margin-bottom: $marginNormal;
+                margin: $marginMedium 0;
 
                 .__item {
                     padding: $paddingNormal $paddingMedium;
@@ -193,7 +207,7 @@ html[data-theme='dark'] {
 
         .main {
 
-            .categories {
+            .categories, .recent-shares {
 
                 .__title {
         
@@ -204,6 +218,8 @@ html[data-theme='dark'] {
                 .__link {
                     color: #FFFFFF;
                 }
+
+                .__description p { color: #51557e; }
         
             }
     

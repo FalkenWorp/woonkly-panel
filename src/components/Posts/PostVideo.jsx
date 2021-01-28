@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) => {
+const PostVideo = ({ boosted = false     }) => {
 
     return(
-        <div className="__post --image column">
+        <div className="__post --video column">
             <div className="__header row align-center">
                 <div className="__author row">
                     <div className="responsive-img">
@@ -37,12 +37,18 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
             <div className="white-space-16"></div>
             <div className="__text">
                 <p className="color-black font-text --font-roboto">
-                    When mega corporations and governments decide what can and cannot be said, who can speak and who cannot, who is right and who is wrong … it is called a totalitarian regime.
+                    Now that the United States faces an economic crisis likely to last longer than the pandemic that precipitated it, such concerns are not unique to America’s largest city.
+                    Urban centers smaller than New York, across the country, have watched in despair as signs of a much sought after revival - new restaurants, businesses in previously abandoned buildings - disappear almost overnight.
                 </p>
             </div>
             <div className="white-space-16"></div>
-            <div className="__image responsive-img">
-                <img src = { image } alt="Post picture" />
+            <div className="__video">
+                <video className="full" controls>
+                    <source src="/videos/post-video.mp4" type="video/mp4" />
+                </video>
+                <div className="__play-video responsive-img">
+                    <img src="/images/post/play-video.svg" alt="Play video icon" />
+                </div>
             </div>
             <div className="white-space-32"></div>
             <div className="__shares row">
@@ -58,7 +64,7 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
                             <img src="/images/post/contact3.png" alt="Contact 3" />
                         </div>
                     </div>
-                    <div className="__contacts-count">
+                    <div className="__contacts-counr">
                         <p className="--font-roboto color-black">
                             <span className="weight-bold --font-roboto --margin-left-8">
                                 Yulissa Torres
@@ -85,9 +91,9 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
             <div className="white-space-24"></div>
             <div className="__divider"></div>
             <div className="white-space-16"></div>
-            <div className="__controls row">
+            <div className="__controls row-responsive">
                 <div className="btn-container row">
-                    <button className="--btn-controls row align-center --likes">
+                    <button className="--btn-controls row align-center">
                         <div className="__icon responsive-img">
                             <img src="/images/post/heart.svg" alt="Heart icon" />
                         </div>
@@ -129,4 +135,4 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
 
 };
 
-export default PostImage;
+export default PostVideo;

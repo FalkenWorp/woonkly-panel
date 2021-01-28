@@ -14,11 +14,13 @@ const FeedCategories = _ => {
             { categories && categories.map((category, key) =>
                 <div className="__nav-item column" key = { key }>
                     <div className="white-space-16"></div>
-                    <Link href = { category.url }>
-                        <a className="weight-semi font-tiny __link">
-                            { category.name }
-                        </a>
-                    </Link>
+                    <div className="__link auto">
+                        <Link href = { category.url }>
+                            <a className="weight-semi font-tiny __link auto">
+                                { category.name }
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             )}
             <div className="white-space-16"></div>

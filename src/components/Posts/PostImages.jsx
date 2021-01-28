@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) => {
+const PostImages = ({ boosted = false, images = ["/images/post-image-min.jpg"] }) => {
 
     return(
-        <div className="__post --image column">
+        <div className="__post --images column">
             <div className="__header row align-center">
                 <div className="__author row">
                     <div className="responsive-img">
@@ -41,8 +41,13 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
                 </p>
             </div>
             <div className="white-space-16"></div>
-            <div className="__image responsive-img">
-                <img src = { image } alt="Post picture" />
+            <div className="__images row-responsive">
+                <div className="__image responsive-img full">
+                    <img src = { images[0] } alt="Post picture" />
+                </div>
+                <div className="__image responsive-img full">
+                    <img src = { images[1] } alt="Post picture" />
+                </div>
             </div>
             <div className="white-space-32"></div>
             <div className="__shares row">
@@ -58,7 +63,7 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
                             <img src="/images/post/contact3.png" alt="Contact 3" />
                         </div>
                     </div>
-                    <div className="__contacts-count">
+                    <div className="__contacts-counr">
                         <p className="--font-roboto color-black">
                             <span className="weight-bold --font-roboto --margin-left-8">
                                 Yulissa Torres
@@ -85,9 +90,9 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
             <div className="white-space-24"></div>
             <div className="__divider"></div>
             <div className="white-space-16"></div>
-            <div className="__controls row">
+            <div className="__controls row-responsive">
                 <div className="btn-container row">
-                    <button className="--btn-controls row align-center --likes">
+                    <button className="--btn-controls row align-center">
                         <div className="__icon responsive-img">
                             <img src="/images/post/heart.svg" alt="Heart icon" />
                         </div>
@@ -129,4 +134,4 @@ const PostImage = ({ boosted = false, image = "/images/post-image-min.jpg" }) =>
 
 };
 
-export default PostImage;
+export default PostImages;

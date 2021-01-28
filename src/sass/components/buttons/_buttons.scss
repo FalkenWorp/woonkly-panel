@@ -1,4 +1,6 @@
 
+button { cursor: pointer; }
+
 .btn {
 
     cursor: pointer;
@@ -130,8 +132,9 @@
 
             .--btn-controls {
 
+                margin: 0 0.5rem;
                 color: #7d8ea3;
-                margin: 0 1rem;
+                padding: $paddingNormal;
                 background-color: var(--white);
 
                 &:first-child { margin-left: 0; }
@@ -154,6 +157,18 @@
         
         .__post {
 
+            .__shares {
+
+                .__options {
+    
+                    .btn-container { width: 100%; }
+
+                    button { min-width: 100%; }
+    
+                }
+    
+            }
+
             .__footer {
     
                 .__options {
@@ -173,6 +188,15 @@
     
                 }
     
+            }
+
+            .__controls {
+
+                .--btn-controls  {
+                    margin: 0;
+                    width: calc(52.5% - 1rem);
+                }
+
             }
     
         }

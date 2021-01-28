@@ -83,10 +83,47 @@ const PostImage = ({ boosted = false }) => {
                 </div> 
             </div>
             <div className="white-space-24"></div>
-            <div className="__controlls row-responsive">
-                
+            <div className="__divider"></div>
+            <div className="white-space-24"></div>
+            <div className="__controls row-responsive">
+                <div className="btn-container row">
+                    <button className="--btn-controls row align-center">
+                        <div className="__icon responsive-img">
+                            <img src="/images/post/heart.svg" alt="Heart icon" />
+                        </div>
+                        <span className="font-mini --margin-left-8 --font-roboto">
+                            5.6 Likes
+                        </span>
+                    </button>
+                    <button className="--btn-controls row align-center">
+                        <div className="__icon responsive-img">
+                            <img src="/images/post/comments.svg" alt="Heart icon" />
+                        </div>
+                        <span className="font-mini --margin-left-8 --font-roboto">
+                            677 Comments
+                        </span>
+                    </button>
+                    <button className="--btn-controls row align-center">
+                        <div className="__icon responsive-img">
+                            <img src="/images/post/share.svg" alt="Heart icon" />
+                        </div>
+                        <span className="font-mini --margin-left-8 --font-roboto">
+                            15.2k Shares
+                        </span>
+                    </button>
+                    <div className="__indicator row align-center">
+                        <div className="__icon responsive-img">
+                            <img src="/images/post/woop.svg" alt="Heart icon" />
+                        </div>
+                        <span className="font-mini --margin-left-8 --font-roboto">
+                            8,314 / 10,000
+                        </span>
+                        <span className="__progress --margin-left-8">
+                            <div className="__progress-bar"></div>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div className="white-space-16"></div>
         </div>
     );
 

@@ -117,6 +117,28 @@
 
         }
 
+        .__controls {
+
+            .--btn-controls {
+
+                color: #7d8ea3;
+                margin: 0 1rem;
+                background-color: var(--white);
+
+                &:first-child { margin-left: 0; }
+
+                &:last-child { margin-right: 0; }
+
+                .__icon {
+
+                    img { max-height: 1rem; }
+
+                }
+
+            }
+
+        }
+
     }
 
     @media screen and (max-width: 586px) {

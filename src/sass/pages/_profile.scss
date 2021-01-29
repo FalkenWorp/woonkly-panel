@@ -1,9 +1,9 @@
 /*
  * @version 1.1.0
- * @description Estilos de la página de /feed
+ * @description Estilos de la página de /profile
 */
 
-.page-feed {
+.page-profile {
 
     background-color: #f5f7fa;
 
@@ -14,42 +14,10 @@
 
         .__left-asides {
 
-            width: 17.5%;
+            width: 20%;
             margin-right: $marginMedium;
 
-            .__title {
-
-                span { color: #7d8ea3; } 
-
-            }
-
-        }
-
-        .cards-container {
-            justify-content: center;
-        }
-
-        .categories {
-
-            .__title {
-
-                span { color: #7d8ea3; } 
-
-            }
-
-            .__link {
-                color: #000000;
-            }
-
-        }
-
-        .recent-shares {
-            
-            .__description {
-
-                p { width: 80%; }
-
-            }
+            @import '../components/asides/asides';
 
         }
 
@@ -74,44 +42,19 @@
             }
 
             @import '../components/posts/post';
+            @import '../components/profile/profile';
 
         }
 
-        .aside {
+        .__right-asides {
 
-            width: 22.5%;
-            border-radius: 5px;
-            align-self: flex-start;
-            background-color: var(--white);
-            padding: $paddingSemi $paddingMedium;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            width: 20%;
+            margin-left: $marginMedium;
 
-            .__item {
-
-                .__icon {
-
-                    img { 
-                        height: 1rem;
-                        margin-top: 0.3rem;
-                    }
-
-                    .--share-icon {
-                        width: 1rem;
-                    }
-
-                }
-
-            }
-
-            .__information {
-
-                p {
-                    color: #000000;
-                }
-
-            }
+            @import '../components/asides/asides';
 
         }
+
 
     }
 
@@ -163,29 +106,22 @@
 
 html[data-theme='dark'] {
 
-    .page-feed {
+    .page-profile {
 
         background-color: #171727;
 
         .main {
 
-            .categories, .recent-shares {
 
-                .__title {
-        
-                    span { color: #51557e; } 
-        
-                }
-        
-                .__link {
-                    color: #FFFFFF;
-                }
+            .__left-asides {
 
-                .__description p { color: #51557e; }
-        
+                @import '../components/asides/asides-dark';
+
             }
     
             .feed {
+
+                @import '../components/profile/profile-dark';
     
                 .__post-creator {
     
@@ -210,19 +146,11 @@ html[data-theme='dark'] {
                 }
     
             }
-    
-            .aside {
-    
-                background-color: #1b1d31;
-    
-                .__information {
-    
-                    p {
-                        color: white;
-                    }
-    
-                }
-    
+
+            .__right-asides {
+
+                @import '../components/asides/asides-dark';
+
             }
 
         }

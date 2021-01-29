@@ -47,8 +47,8 @@ button { cursor: pointer; }
             color: #00bdec;
             background-color: #e0f9ff;
         }
-    }
 
+    }
 
 }
 
@@ -76,7 +76,7 @@ button { cursor: pointer; }
 
 }
 
-.page-feed {
+.page-feed, .page-profile {
 
     .__post-creator {
 
@@ -239,7 +239,7 @@ html[data-theme='dark'] {
 
     }
 
-    .page-feed {
+    .page-feed, .page-profile {
 
         .__post-creator {
     

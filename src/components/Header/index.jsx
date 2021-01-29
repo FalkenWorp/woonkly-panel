@@ -95,8 +95,12 @@ const Header = () => {
 								0x5C...213A
 							</button>
 						</div>
-						<div className="profile-picture responsive-img">
-							<img src="/images/common/mr-santos-profile.png" alt="Mr Santos Profile"/>
+						<div className="profile-picture">
+							<Link href="/profile">
+								<a className="responsive-img">
+									<img src="/images/common/mr-santos-profile.png" alt="Mr Santos Profile"/>
+								</a>
+							</Link>
 						</div>
 					</nav>
 				</div>

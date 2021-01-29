@@ -1,3 +1,45 @@
+
+.__post-creator {
+
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+
+    .__head {
+        padding: $paddingMedium;
+    }
+
+    .__post-textarea {
+
+        position: relative;
+
+        .--text-limit {
+            bottom: 0;
+            right: 0;
+            color: #adbed3;
+            position: absolute;
+        }
+
+    }
+
+    .__divider {
+        border: solid 0.5px #e9edf2;
+    }
+
+    @media screen and (max-width: 768px) {
+        
+        .__post-creator {
+
+            .__divider, .__amount, .__type {
+                display: none;
+            }
+
+        }
+
+    }
+
+}
+
 .__post {
 
     position: relative;

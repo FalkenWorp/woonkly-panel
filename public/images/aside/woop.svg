@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.161" height="17.744" viewBox="0 0 32.161 17.744">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Trazado_1374" d="M329.071-1032.268a9.6 9.6 0 0 1-5.351-1.9s2.631-3.668 6.021-4.041c2.944-.325 4.594.975 4.729 2.044.09 1.068-1.071 3.715-5.4 3.9m-13.067 2.787c-4.326 1.439-6.154-.7-6.467-1.719s.313-2.647 3.568-3.576c3.209-.928 7.093 1.626 7.093 1.626a9.279 9.279 0 0 1-4.192 3.668M329.74-1043c-7.093.093-8.608 7.2-8.608 7.2-2.5-2.508-4.95-3.809-8.518-3.437s-6.418 3.762-6.6 6.409a7.682 7.682 0 0 0 7.894 7.57c5.664 0 8.027-6.177 8.027-6.177a9.647 9.647 0 0 0 7.671 3.53c6.377-.139 8.206-4.551 8.518-6.735.312-2.6-1.294-8.5-8.385-8.36" class="cls-1" transform="translate(-306 1043)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Trazado_1373" d="M0 117.711h2129.264V-1080H0z" class="cls-1" transform="translate(0 1080)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#20c0ff}
+        </style>
+    </defs>
+    <g id="woop" clip-path="url(#clip-path)">
+        <g id="Grupo_2605" clip-path="url(#clip-path-2)" transform="translate(-339.351 -41.032)">
+            <g id="Grupo_2604">
+                <path id="Trazado_1372" d="M-306-37h2129.264v1197.711H-306z" class="cls-1" transform="translate(306 37)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,90 @@
+.aside_my-balance {
+
+    background-color: #1b1d31;
+
+    .__title {
+
+        p { color: #ffffff; }
+
+    }
+
+    .__balance {
+
+        border-bottom: 0.5px solid #252843;
+
+        .__value {
+
+            p { color: #ffffff; }
+
+        }
+
+    }
+
+}
+
+.aside_following {
+
+    background-color: #1b1d31;
+
+    .__head {
+
+        border-bottom: 0.5px solid #252843;
+
+        .__title {
+
+            p { color: #ffffff; }
+    
+        }
+
+        .__option {
+
+            p { color: #ffffff; } 
+
+        }
+
+    }
+
+    .__content {
+
+        .__name {
+
+            p { color: #ffffff; }
+
+        }
+
+    }
+
+}
+
+.aside_featured {
+
+    .__title {
+
+        p { color: #ffffff; }
+
+    }
+
+    .__content {
+
+        .__featured {
+
+            background-color: #1b1d31;
+
+            .__title {
+
+                p { color: #ffffff; }
+
+            }
+
+
+            .__description {
+
+                p { color: #ffffff;  }
+
+            }
+
+        }
+
+    }
+
+}

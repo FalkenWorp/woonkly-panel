@@ -1,0 +1,62 @@
+.profile_head {
+
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+
+    .__head {
+
+        padding: $paddingMedium;
+
+        .__image {
+
+            img { 
+                width: 4rem;
+                height: 4rem;
+                object-fit: cover;
+                border-radius: 50%;
+                object-position: center;
+            }
+
+        }
+
+        .--verified { height: 1rem; }
+
+        .__location {
+
+            p { color: #2d3055; }
+
+        }
+
+        .__edit {
+            justify-content: flex-end;
+        }
+
+    }
+
+    .__footer {
+
+        padding: $paddingMedium;
+        padding-top: 0;
+
+        .__info {
+
+            margin: 0 $marginMedium;
+
+            &:first-child { margin-left: 0; }
+            &:last-child { margin-right: 0; }
+
+            .__value { color: #000000; }
+    
+            .__description {
+
+                color: #7d8ea3;
+                margin-left: $marginNormal;
+
+            }
+
+        }
+
+    }
+
+}

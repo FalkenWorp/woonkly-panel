@@ -4,7 +4,7 @@ const ProfileHead = _ => {
 
     return(
         <div className="profile_head column">
-            <div className="__head row-responsive">
+            <div className="__head row">
                 <div className="__quick full column">
                     <div className="__image responsive-img">
                         <img src="/images/profile/profile-image.png" alt = "Profile picture" />

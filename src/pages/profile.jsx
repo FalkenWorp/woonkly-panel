@@ -35,7 +35,7 @@ const PageProfile = _ => {
 				<Header showProfile = { true } />
 				<div className="main justify-center">
 					<div className="container column">
-                        <div className="row-responsive">
+                        <div className="row-responsive --to-column-mobile">
                             <div className="__left-asides column">
                                 <AsideMyBalances />
                                 <div className="white-space-16"></div>

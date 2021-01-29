@@ -50,6 +50,12 @@
         margin-top: $marginNormal;  
     }
 
+    @media screen and (max-width: 1024px) {
+
+        margin-right: 0;
+
+    }
+
 }
 
 .aside_following {
@@ -125,6 +131,40 @@
 
     }
 
+    @media screen and (max-width: 1024px) {
+
+        margin-right: 0;
+
+        .__content {
+    
+            .__icon {
+    
+                justify-content: center;
+    
+                .--image { width: 50%; }
+    
+            }
+    
+        }
+
+    }
+
+    @media screen and (max-width: 586px) {
+
+        .__content {
+    
+            .__icon {
+    
+                justify-content: center;
+    
+                .--image { width: 70%; }
+    
+            }
+    
+        }
+
+    }
+
 }
 
 .aside_featured {
@@ -171,8 +211,12 @@
 
     }
 
-    .__all {
-        margin-top: $marginNormal;  
+    .__all { margin-top: $marginNormal; }
+
+    @media screen and (max-width: 1024px) {
+
+        display: none;
+
     }
 
 }

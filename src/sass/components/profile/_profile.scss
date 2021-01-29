@@ -59,4 +59,37 @@
 
     }
 
+    @media screen and (max-width: 586px) {
+
+        .__head {
+
+            padding: 0.75rem;
+
+            .__edit { width: 47.5%; }
+
+        }
+
+        .__footer {
+
+            padding: 0.75rem;
+            padding-top: 0;
+
+            .__info {
+
+                width: calc(50% - 1rem);
+    
+                margin: 0;
+
+                .__value, .__description { 
+
+                    font-size: 0.75rem;
+                    margin-left: 0.25rem;
+                }
+    
+            }
+    
+        }
+
+    }
+
 }

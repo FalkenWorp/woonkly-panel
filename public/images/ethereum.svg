@@ -1,5 +1,1 @@
-<svg id="ethereum" xmlns="http://www.w3.org/2000/svg" width="23.091" height="42.138" viewBox="0 0 23.091 42.138">
-  <path id="Trazado_167" data-name="Trazado 167" d="M11.545,272.34,0,266.848l11.545,20.176,11.546-20.176Zm0,0" transform="translate(0 -244.886)" fill="#697ee3"/>
-  <path id="Trazado_168" data-name="Trazado 168" d="M35.721,17.869,25.433,0l-10.3,17.89L25.433,13Zm0,0" transform="translate(-13.887)" fill="#697ee3"/>
-  <path id="Trazado_169" data-name="Trazado 169" d="M25.98,195.772l9.407,4.456,9.423-4.463-9.423-4.456Zm0,0" transform="translate(-23.842 -175.564)" fill="#697ee3"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="ethereum" width="23.091" height="42.138" viewBox="0 0 23.091 42.138"><path id="Trazado_167" fill="#697ee3" d="M11.545,272.34,0,266.848l11.545,20.176,11.546-20.176Zm0,0" data-name="Trazado 167" transform="translate(0 -244.886)"/><path id="Trazado_168" fill="#697ee3" d="M35.721,17.869,25.433,0l-10.3,17.89L25.433,13Zm0,0" data-name="Trazado 168" transform="translate(-13.887)"/><path id="Trazado_169" fill="#697ee3" d="M25.98,195.772l9.407,4.456,9.423-4.463-9.423-4.456Zm0,0" data-name="Trazado 169" transform="translate(-23.842 -175.564)"/></svg>

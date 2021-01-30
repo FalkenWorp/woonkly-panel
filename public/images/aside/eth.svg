@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="ethereum" width="17.007" height="31.035" viewBox="0 0 17.007 31.035">
-    <defs>
-        <style>
-            .cls-1{fill:#697ee3}
-        </style>
-    </defs>
-    <path id="Trazado_167" d="M8.5 270.893L0 266.848l8.5 14.86 8.5-14.86zm0 0" class="cls-1" transform="translate(0 -250.673)"/>
-    <path id="Trazado_168" d="M30.3 13.161L22.719 0l-7.586 13.176 7.586-3.6zm0 0" class="cls-1" transform="translate(-14.216)"/>
-    <path id="Trazado_169" d="M25.98 194.6l6.928 3.282 6.94-3.287-6.94-3.281zm0 0" class="cls-1" transform="translate(-24.406 -179.712)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="ethereum" width="17.007" height="31.035" viewBox="0 0 17.007 31.035"><defs><style>.cls-1{fill:#697ee3}</style></defs><path id="Trazado_167" d="M8.5 270.893L0 266.848l8.5 14.86 8.5-14.86zm0 0" class="cls-1" transform="translate(0 -250.673)"/><path id="Trazado_168" d="M30.3 13.161L22.719 0l-7.586 13.176 7.586-3.6zm0 0" class="cls-1" transform="translate(-14.216)"/><path id="Trazado_169" d="M25.98 194.6l6.928 3.282 6.94-3.287-6.94-3.281zm0 0" class="cls-1" transform="translate(-24.406 -179.712)"/></svg>
